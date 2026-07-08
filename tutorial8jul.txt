@@ -1,0 +1,31 @@
+ INTRODUCCION:
+ 
+ abrir terminal (Ctrl+Shift+t)
+ 
+ cd taller (ingresa a la carpeta "taller")
+ 
+ source env/bin/activate (activa el entorno virtual para jupyter)
+ 
+ jupyter-lab (inicia jupyter)
+ 
+ descargar lagos.csv desde la tarea de classroom "pasando a python con jupyter" 
+ 
+ PASO 1: inicialización
+ 
+ entrar a jupyter y escribir:                        en caso de error por falta de libreria pandas en la PC:
+    "import pandas as pd"                                              "!pip install panda"
+  
+ PASO 2: definir la variable 
+ 
+ escribir: lagos = pd.read_csv("lagos_arg.csv")... para ejecutarlo, escribir "lagos"
+ 
+ PASO 3: transcribir los codigos de python del documento a jupyter 1 y 1.1
+ 
+ 
+ Mapas: def agregar_marca_lago(row):
+    folium.Marker(
+        [row['lat'], row['lng']],                 en 'lat' cambiar a 'latitud y 'lng' cambiar a longitud
+        popup=row['Nombre'],                      en 'nombre' cambiar al nombre de la columna deseada
+        icon=folium.Icon()
+        ).add_to(mapa)
+                                  
