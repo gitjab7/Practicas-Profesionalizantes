@@ -21,7 +21,8 @@
  
  PASO 3: transcribir los codigos de python del documento a jupyter 1 y 1.1
  
- 
+ hacer una variable de mapa diferente cada vez en la actividad de mapas, debido a que si no se hace se le ponen capas al mkismo mapa
+
  Mapas: def agregar_marca_lago(row):
     folium.Marker(
         [row['lat'], row['lng']],                 en 'lat' cambiar a 'latitud y 'lng' cambiar a longitud
