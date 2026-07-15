@@ -27,5 +27,7 @@
         [row['lat'], row['lng']],                 en 'lat' cambiar a 'latitud y 'lng' cambiar a longitud
         popup=row['Nombre'],                      en 'nombre' cambiar al nombre de la columna deseada
         icon=folium.Icon()
+
+abrir jupyter en casa: en windows podemos instalar jupyter usando el siguiente link https://dcain.etsin.upm.es/~carlos/bookAA/01.2_InstalacionPythonJupyter.html
         ).add_to(mapa)
                                   
